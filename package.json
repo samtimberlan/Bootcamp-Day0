@@ -1,0 +1,25 @@
+{
+  "name": "bootcamp-day0",
+  "version": "1.0.0",
+  "description": "Getting prime numbers",
+  "main": "primeNumberGenerator.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samtimberlan/Bootcamp-Day0.git"
+  },
+  "keywords": [
+    "primes"
+  ],
+  "author": "tim udoma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samtimberlan/Bootcamp-Day0/issues"
+  },
+  "homepage": "https://github.com/samtimberlan/Bootcamp-Day0#readme",
+  "dependencies": {
+    "jasmine": "^2.6.0"
+  }
+}
