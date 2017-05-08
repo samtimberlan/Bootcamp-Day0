@@ -1,6 +1,6 @@
 'use strict'
-var jasmine = require('jasmine');
-let myApp = require('./src');
+const jasmine = require('jasmine');
+let myApp = require('./primeNumberGenerator.js');
 describe("Get the prime numbers",function(){
 
   it("should get prime numbers within a given integer", function(){
