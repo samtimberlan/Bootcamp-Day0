@@ -1,18 +1,24 @@
 'use script'
-function checkPrime(n){
-	if(n < 2){
-		return false;
-	}
-	else if(n <= 3){
-		return true;
-	}
-	else if(n % 2 === 0){
+function checkPrime(numberPassed){
+
+	//returns false for 1
+	if(numberPassed < 2){
 		return false;
 	}
 
-	let length = Math.sqrt(n) + 1;
-	for(var i = 3; i <= length; i += 2){
-		if(n % i === 0){
+	//returns true for 2 and 3
+	else if(numberPassed <= 3){
+		return true;
+	}
+
+	//returns false for even numbers greater than 2
+	else if(numberPassed % 2 === 0){
+		return false;
+	}
+
+	let length = Math.sqrt(numberPassed) + 1;
+	for(let counter = 3; counter <= length; counter += 2){
+		if(numberPassed % counter === 0){
 			return false;
 		}
 	}
@@ -31,9 +37,9 @@ function getPrimes(numberPassed){
 		return listOfPrimes;
 	}
 	else{
-	for(let i = 0; i <= numberPassed; i++){
-		if(checkPrime(i) === true){
-			listOfPrimes.push(i);
+	for(let counter = 0; counter <= numberPassed; counter++){
+		if(checkPrime(counter) === true){
+			listOfPrimes.push(counter);
 		}
 	}
   }
