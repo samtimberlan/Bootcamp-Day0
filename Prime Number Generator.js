@@ -11,7 +11,7 @@ function isPrime(n){
 	}
 
 	let length = Math.sqrt(n) + 1;
-	for(var i = 3; i <= length; i += 2){
+	for(let i = 3; i <= length; i += 2){
 		if(n % i === 0){
 			return false;
 		}
@@ -36,4 +36,5 @@ function getPrimes(x){
   }
   return (list)
 }
+
 module.exports = {getPrimes};
